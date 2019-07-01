@@ -10,6 +10,10 @@ public class Employee {
     private String name;
     private int age;
 
+    @ManyToOne
+    @JoinColumn(name = "company_id") //表示数据库中要对应的一列名字
+    private Company company;
+
     public Employee() {}
 
     public Employee(String name, int age) {
@@ -35,5 +39,13 @@ public class Employee {
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
     }
 }
