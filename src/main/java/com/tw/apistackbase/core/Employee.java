@@ -3,11 +3,9 @@ package com.tw.apistackbase.core;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "t_emp")
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "emp_id")
     private Long id;
     private String name;
     private int age;
