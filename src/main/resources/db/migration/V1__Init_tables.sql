@@ -10,7 +10,7 @@ create table Employee (
 create table Company (
                          id LONG primary key ,
                          name VARCHAR(225),
-                         company_profile_id long unique
+                         profile_id long unique
 );
 
 

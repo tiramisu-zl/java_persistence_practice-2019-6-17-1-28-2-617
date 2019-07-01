@@ -11,7 +11,6 @@ public class Company {
     private String name;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "company_profile_id", unique = true)
     private CompanyProfile profile;
 
     public CompanyProfile getProfile() {
