@@ -35,4 +35,8 @@ public class Employee {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public Long getId() {
+        return id;
+    }
 }
