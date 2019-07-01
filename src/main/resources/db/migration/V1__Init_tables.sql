@@ -1,4 +1,6 @@
 create sequence hibernate_sequence;
+create sequence employee_sequence;
+create sequence company_sequence;
 
 create table Employee (
                           id LONG primary key ,

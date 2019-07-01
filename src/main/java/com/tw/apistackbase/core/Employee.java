@@ -5,7 +5,8 @@ import javax.persistence.*;
 @Entity
 public class Employee {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @SequenceGenerator(name = "e_seq", sequenceName = "EMPLOYEE_SEQUENCE", allocationSize = 1)
+    @GeneratedValue(generator = "e_seq", strategy = GenerationType.SEQUENCE)
     private Long id;
     private String name;
     private int age;

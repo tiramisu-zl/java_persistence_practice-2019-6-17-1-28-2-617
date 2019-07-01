@@ -15,6 +15,7 @@ spring:
       properties:
         format_sql: true
       ddl-auto: none
+      use-new-id-generator-mappings: false
     show-sql: true
   h2:
     console:
